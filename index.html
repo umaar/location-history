@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Location history</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, target-densityDpi=device-dpi" />
+	<meta name="description" content="View your location history on a map" />
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container">
+
+<header class="header">
+	<h1>Location History - Visualise your location history on a map.</h1>
+	<!-- <github-ribbon owner="umaar" repo="location-history"></github-ribbon> -->
+</header>
+
+
+<article class="how-it-works">
+	<p><strong>How it works</strong> - Exported location data from <a href="https://www.google.com/settings/takeout">Google Takeout</a> used to plot lat/longs on a map. </p>
+</article>
+
+
+<section class="filter">
+	<ul>
+		<li><a class="filter-heatmap" title="Heatmap demo" href="#filter-heatmap">Heatmap</a></li>
+		<li><a class="filter-clustering" href="#filter-clustering">Clustering</a></li>
+		<li><a class="filter-marker" title="Markers. Warning, can be very slow!" href="#filter-marker">Markers</a></li>
+		<!-- <li><a class="filter-raw" href="#filter-raw">Raw data</a></li> -->
+	</ul>
+</section>
+
+<article class="demo">
+	<div class="demo-gmap"></div>
+</article>
+
+
+<footer class="footer">
+	<ul>
+		<li><a href="https://google.com/+UmarHansa">+UmarHansa</a></li>
+		<li><a href="https://twitter.com/umaar">@umaar</a></li>
+		<li><a href="https://github.com/umaar/location-history">Github Source</a></li>
+	</ul>
+</footer>
+
+</div><!-- .container -->
+
+<script data-main="js/main.js" src="bower_components/requirejs/index.js"></script>
+
+</body>
+</html>
