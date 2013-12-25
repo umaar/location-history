@@ -36,7 +36,7 @@ requirejs([
 		});
 
 		dataController.init({
-			dataUrl: "../data/LocationHistory.json"
+			dataUrl: location.href + "data/LocationHistory.json"
 		});
 
 		filterControls.init({
