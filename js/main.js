@@ -36,7 +36,7 @@ requirejs([
 		});
 
 		dataController.init({
-			dataUrl: location.href + "data/LocationHistory.json"
+			dataUrl: location.protocol+"//"+location.hostname+(location.port?":"+location.port:"")+location.pathname+(location.search?location.search:"") + "data/LocationHistory.json"
 		});
 
 		filterControls.init({
