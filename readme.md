@@ -1,6 +1,5 @@
 # Location History
 
-[![Build Status](https://travis-ci.org/umaar/location-history.png)](https://travis-ci.org/umaar/location-history)
 [![devDependency Status](https://david-dm.org/umaar/location-history/dev-status.png)](https://david-dm.org/umaar/location-history#info=devDependencies)
 
 #### Preview locally
