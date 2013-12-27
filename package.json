@@ -1,0 +1,19 @@
+{
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "./node_modules/grunt-cli/bin/grunt test",
+    "start": "npm install && ./node_modules/bower/bin/bower install && ./node_modules/grunt-cli/bin/grunt"
+  },
+  "devDependencies": {
+    "bower": "~1.2.8",
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-notify": "~0.2.16",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-reload": "~0.2.0",
+    "grunt-contrib-copy": "~0.5.0"
+  }
+}

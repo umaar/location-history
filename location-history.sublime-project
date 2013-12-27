@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/umarhansa/development/location-history",
+			"folder_exclude_patterns": ["node_modules", "bower_components"],
+			"file_exclude_patterns": ["location-history.sublime-project", ".editorconfig", ".jshintrc", ".bowerrc"]
+		}
+	]
+}

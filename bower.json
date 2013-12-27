@@ -1,0 +1,11 @@
+{
+  "name": "location-history",
+  "dependencies": {
+    "jquery": "http://code.jquery.com/jquery-2.0.3.js",
+    "requirejs": "http://requirejs.org/docs/release/2.1.9/comments/require.js",
+    "pubsub-js": "~1.4.0",
+    "requirejs-plugins": "~1.0.2",
+    "maps-clusterer": "https://google-maps-utility-library-v3.googlecode.com/svn-history/r444/trunk/markerclusterer/src/markerclusterer_compiled.js",
+    "normalize-css": "https://github.com/necolas/normalize.css.git"
+  }
+}
