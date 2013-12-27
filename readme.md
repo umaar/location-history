@@ -12,7 +12,12 @@ Run the following commands and open up `http://127.0.0.1:8911/`. LiveReload is e
 ````
 git clone https://github.com/umaar/location-history.git
 cd location-history
+
+# Runs npm install , bower install and starts a webserver with grunt.
 npm start
+
+#Runs tests - requires phantomjs
+npm test
 ````
 
 ## TODO

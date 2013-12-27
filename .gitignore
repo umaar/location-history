@@ -1,6 +1,6 @@
 node_modules
 location-history.sublime-workspace
-dist
+phantomjsdriver.log
 
 # Compiled source #
 ###################
