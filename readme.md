@@ -1,5 +1,8 @@
 # Location History
 
+[![Build Status](https://travis-ci.org/umaar/location-history.png)](https://travis-ci.org/umaar/location-history)
+[![devDependency Status](https://david-dm.org/umaar/location-history/dev-status.png)](https://david-dm.org/umaar/location-history#info=devDependencies)
+
 #### Preview locally
 * Download [location-history/archive/gh-pages.zip](https://github.com/umaar/location-history/archive/gh-pages.zip).
 * Serve up the extracted folder through a web server.
