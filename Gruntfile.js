@@ -14,24 +14,26 @@ module.exports = function(grunt) {
 		},
 
 		connect: {
-			server: {
+			dev: {
 				options: {
 					port: 8911,
 					livereload: 35729
 				}
+			},
+			test: {
+				options: {
+					port: 8912
+				}
 			}
 		},
 
-		dalek: {
-			options: {
-				browser: [/*"phantomjs",*/ "chrome"],
-				dalekfile: false,
-				reporter: ["console"]
-			},
-			dist: {
-				src: [
-					"test/**/*.js", "!test/sample.js"
-				]
+		shell: {
+			"mocha": {
+				options: {
+					stdout: true,
+					failOnError: true
+				},
+				command: "./node_modules/mocha/bin/mocha --timeout 50000 --reporter spec test/runner/run.js"
 			}
 		},
 
@@ -47,6 +49,6 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.registerTask("default", ["jshint", "connect", "watch"]);
-	grunt.registerTask("test", ["jshint", "connect", "dalek"]);
+	grunt.registerTask("default", ["jshint", "connect:dev", "watch"]);
+	grunt.registerTask("test", ["jshint", "connect:test", "shell:mocha"]);
 };

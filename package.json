@@ -14,7 +14,10 @@
     "grunt-reload": "~0.2.0",
     "david": "~2.4.0",
     "load-grunt-tasks": "~0.2.1",
-    "grunt-dalek": "~0.2.0",
-    "dalek-browser-chrome": "0.0.8"
+    "selenium-webdriver": "~2.39.0",
+    "glob": "~3.2.7",
+    "mocha": "~1.16.2",
+    "yadda": "~0.8.6",
+    "grunt-shell": "~0.6.1"
   }
 }
