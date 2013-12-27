@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		jshint: {
-			all: ["Gruntfile.js", "js/**/*.js"],
+			all: ["Gruntfile.js", "js/**/*.js", "test/**/*.js"],
 			options: {
 				jshintrc: ".jshintrc"
 			}
@@ -24,12 +24,13 @@ module.exports = function(grunt) {
 
 		dalek: {
 			options: {
-				browser: ["phantomjs"],
-				dalekfile: false
+				browser: [/*"phantomjs",*/ "chrome"],
+				dalekfile: false,
+				reporter: ["console"]
 			},
 			dist: {
 				src: [
-					"test/sample.js"
+					"test/**/*.js", "!test/sample.js"
 				]
 			}
 		},
@@ -47,5 +48,5 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask("default", ["jshint", "connect", "watch"]);
-	grunt.registerTask("test", ["jshint"]);
+	grunt.registerTask("test", ["jshint", "connect", "dalek"]);
 };
