@@ -1,6 +1,6 @@
 /*jshint maxparams:20 */
 
-define(["jquery", "pubsub", "googleMaps"], function ($, pubsub, maps) {
+define(["jquery", "pubsub"], function ($, pubsub) {
 
 	"use strict";
 

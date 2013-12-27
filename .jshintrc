@@ -10,7 +10,7 @@
 	"noarg": true,
 	"quotmark": "double",
 	"undef": true,
-	"unused": false,
+	"unused": true,
 	"strict": true,
 	"trailing": true,
 	"smarttabs": true,

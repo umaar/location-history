@@ -6,7 +6,6 @@ define(["jquery", "pubsub", "googleMaps"], function ($, pubsub, maps) {
 
 	var map;
 	var heatmap;
-	var subscriptionToken;
 	var locationData;
 
 	var handleMapData = function (msg, data) {
