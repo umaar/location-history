@@ -3,7 +3,7 @@
 module.exports = function(grunt) {
 	"use strict";
 
-	require("matchdep").filterDev("grunt-!(cli)").forEach(grunt.loadNpmTasks);
+	require("load-grunt-tasks")(grunt);
 
 	grunt.initConfig({
 		jshint: {
