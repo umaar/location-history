@@ -80,7 +80,9 @@ define([
 	return {
 		init: function(c) {
 			mapEl = $(c.selector);
-			init();
+			if (mapEl) {
+				init();
+			}
 		}
 	};
 });
