@@ -22,24 +22,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		copy: {
-			main: {
-				files: [
-					{expand: true, src: [
-						"bower_components/**",
-						"css/**",
-						"data/**",
-						"fonts/**",
-						"img/**",
-						"js/**",
-						"index.html",
-						"favicon.ico"
-
-					], dest: "dist/"}
-				]
-			}
-		},
-
 		watch: {
 			all: {
 				files: ["js/**/*.js", "css/*.css", "index.html"],
@@ -53,4 +35,5 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask("default", ["jshint", "connect", "watch"]);
+	grunt.registerTask("test", ["jshint"]);
 };
