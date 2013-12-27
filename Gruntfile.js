@@ -22,6 +22,18 @@ module.exports = function(grunt) {
 			}
 		},
 
+		dalek: {
+			options: {
+				browser: ["phantomjs"],
+				dalekfile: false
+			},
+			dist: {
+				src: [
+					"test/sample.js"
+				]
+			}
+		},
+
 		watch: {
 			all: {
 				files: ["js/**/*.js", "css/*.css", "index.html"],
