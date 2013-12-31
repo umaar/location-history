@@ -43,7 +43,9 @@ h1   { font-size: 2.4rem; }
 	border-top: 3px solid rgba(233, 218, 218, 0.8);
 	border-bottom: 3px solid rgba(233, 218, 218, 0.8);
 	overflow: hidden;
-	background-color: rgba(238, 238, 238, 0.8);
+	background-color: #3498DB;
+	border-color: rgba(0, 0, 0, 0);
+	margin: 20px 0;
 }
 
 .filter ul {
@@ -64,8 +66,7 @@ h1   { font-size: 2.4rem; }
 .filter a:active,
 .filter .filter-selected  {
 	opacity: 1.0;
-	background-color: #fff;
-	color: inherit;
+	background-color: #1880C5;
 }
 
 .filter .filter-selected {
@@ -78,11 +79,10 @@ h1   { font-size: 2.4rem; }
 	background-repeat: no-repeat;
 	text-decoration: none;
 	padding: 10px 10px 70px 10px;
-	opacity: 0.7;
 	font-size: 20px;
 	background-position: center 88%;
 	text-align: center;
-	font-weight: bold;
+	color: #fff;
 }
 
 .filter-heatmap {
